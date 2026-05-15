@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="لعبة تحقيق عائلية عربية تحتوي على أربع قضايا مستقلة قابلة للحل.">
+  <title>ملفات التحري العائلية</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="index.html"><span class="brand-icon">🕵️</span><span><h1>ملفات التحري العائلية</h1><small>Family Detective Files</small></span></a>
+    <div class="nav-links"><a class="active" href="index.html">الرئيسية</a><a href="cases.html">القضايا</a><a href="play.html">ابدأ التحقيق</a><a href="guide.html">طريقة اللعب</a></div>
+  </nav>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <span class="badge">✨ لعبة عربية عائلية مناسبة 14+</span>
+        <h2>حل القضايا بالمنطق، مش بالحظ.</h2>
+        <p>موقع لعبة تحقيق احترافي متعدد الصفحات يحتوي على أربع قضايا مستقلة: سرقة دراجة، لوحة فنية، مخطوطة، وختم أثري. كل قضية فيها أدلة واضحة، هنتات تدريجية، ونظام حل نهائي.</p>
+        <div class="actions"><a class="btn btn-primary" href="play.html">ابدأ التحقيق</a><a class="btn btn-soft" href="cases.html">استعرض القضايا</a></div>
+      </div>
+      <div class="hero-side">
+        <div class="card" style="padding:24px"><div class="stat-grid"><div class="stat"><b>4</b><span>قضايا كاملة</span></div><div class="stat"><b>14+</b><span>مناسب للعائلة</span></div><div class="stat"><b>3</b><span>درجات صعوبة</span></div><div class="stat"><b>0</b><span>مؤقت أو ضغط</span></div></div></div>
+        <div class="card" style="padding:24px"><h3>جاهز للرفع على GitHub</h3><p class="lead">المشروع منظم إلى HTML وCSS وJavaScript وبيانات مستقلة. ارفعه مباشرة على GitHub Pages.</p></div>
+      </div>
+    </section>
+    <section>
+      <div class="section-head"><div><h2>أحدث القضايا</h2><p class="muted">اختار قضية وابدأ في قراءة الملف، جمع الأدلة، واختبار استنتاجك.</p></div><a class="btn btn-primary" href="cases.html">كل القضايا</a></div>
+      <div class="case-grid" id="caseCards"></div>
+    </section>
+  </main>
+  <footer class="footer">© Family Detective Files - مشروع لعبة تحقيق عائلية</footer>
+  <script src="data/cases.js"></script><script src="js/app.js"></script>
+</body>
+</html>

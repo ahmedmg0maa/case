@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>غرفة التحقيق | ملفات التحري العائلية</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="nav"><a class="brand" href="index.html"><span class="brand-icon">🕵️</span><span><h1>غرفة التحقيق</h1><small>اقرأ - اجمع - استنتج</small></span></a><div class="nav-links"><a href="index.html">الرئيسية</a><a href="cases.html">القضايا</a><a class="active" href="play.html">ابدأ التحقيق</a><a href="guide.html">طريقة اللعب</a></div></nav>
+  <main class="container">
+    <div class="section-head"><div><h2>غرفة التحقيق</h2><p class="muted">بدون وقت. اقرأ براحتك، اجمع الأدلة، استخدم الهنتات، ثم قدّم تقريرك.</p></div><button class="btn btn-white" onclick="clearBoard()">مسح أدلة القضية</button></div>
+    <section class="play-layout">
+      <aside class="panel side-menu" id="caseMenu"></aside>
+      <section class="panel reader">
+        <div class="case-top"><div><span id="caseBadge" class="tag medium">متوسطة</span><h2 id="caseTitle"></h2><p class="muted" id="caseSummary"></p></div><button class="btn btn-soft" onclick="openHint()">هنت تدريجي</button></div>
+        <div class="tabs" id="tabs"></div><div id="readerContent"></div>
+      </section>
+      <aside class="panel solve-panel">
+        <h3 style="color:#3f5ed1;margin-bottom:10px">لوحة الأدلة</h3><p class="muted" style="line-height:1.8;margin-bottom:14px">أضف الأدلة التي تراها مهمة ثم استخدمها للحل.</p>
+        <div id="board"></div>
+        <hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
+        <h3 style="color:#3f5ed1;margin-bottom:10px">تقرير المحقق</h3>
+        <select id="answerSelect"></select><textarea id="detectiveNotes" placeholder="اكتب سبب اختيارك هنا..."></textarea>
+        <button class="btn btn-primary" style="width:100%" onclick="solveCase()">إرسال التقرير</button>
+        <button class="btn btn-white" style="width:100%;margin-top:10px" onclick="addCurrentEvidence()">إضافة الدليل الحالي</button>
+        <div class="result" id="result"></div>
+      </aside>
+    </section>
+  </main>
+  <div class="modal" id="hintModal" onclick="closeHint(event)"><div class="modal-card card"><h3>هنت تدريجي</h3><p id="hintText"></p><div class="actions"><button class="btn btn-primary" onclick="nextHint(event)">هنت أقوى</button><button class="btn btn-white" onclick="closeHint()">إغلاق</button></div></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="data/cases.js"></script><script src="js/app.js"></script>
+</body>
+</html>
