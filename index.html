@@ -1,36 +1,27 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="لعبة تحقيق عائلية عربية تحتوي على أربع قضايا مستقلة قابلة للحل.">
-  <title>ملفات التحري العائلية</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <nav class="nav">
-    <a class="brand" href="index.html"><span class="brand-icon">🕵️</span><span><h1>ملفات التحري العائلية</h1><small>Family Detective Files</small></span></a>
-    <div class="nav-links"><a class="active" href="index.html">الرئيسية</a><a href="cases.html">القضايا</a><a href="play.html">ابدأ التحقيق</a><a href="guide.html">طريقة اللعب</a></div>
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#172033" />
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" /><title>Family Mystery Hub | الرئيسية</title></head><body data-page="home">
+<div class="bg-orbs"></div><div class="container"><header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark">⌕</span><span><strong>Family Mystery Hub</strong><small>منصة ألعاب عائلية</small></span></a>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="index.html" data-page="home">الرئيسية</a>
+    <a href="cases.html" data-page="cases">القضايا</a>
+    <a href="games.html" data-page="games">الألعاب</a>
+    <a href="guide.html" data-page="guide">الدليل</a>
   </nav>
-  <main class="container">
-    <section class="hero">
-      <div class="hero-card">
-        <span class="badge">✨ لعبة عربية عائلية مناسبة 14+</span>
-        <h2>حل القضايا بالمنطق، مش بالحظ.</h2>
-        <p>موقع لعبة تحقيق احترافي متعدد الصفحات يحتوي على أربع قضايا مستقلة: سرقة دراجة، لوحة فنية، مخطوطة، وختم أثري. كل قضية فيها أدلة واضحة، هنتات تدريجية، ونظام حل نهائي.</p>
-        <div class="actions"><a class="btn btn-primary" href="play.html">ابدأ التحقيق</a><a class="btn btn-soft" href="cases.html">استعرض القضايا</a></div>
-      </div>
-      <div class="hero-side">
-        <div class="card" style="padding:24px"><div class="stat-grid"><div class="stat"><b>4</b><span>قضايا كاملة</span></div><div class="stat"><b>14+</b><span>مناسب للعائلة</span></div><div class="stat"><b>3</b><span>درجات صعوبة</span></div><div class="stat"><b>0</b><span>مؤقت أو ضغط</span></div></div></div>
-        <div class="card" style="padding:24px"><h3>جاهز للرفع على GitHub</h3><p class="lead">المشروع منظم إلى HTML وCSS وJavaScript وبيانات مستقلة. ارفعه مباشرة على GitHub Pages.</p></div>
-      </div>
-    </section>
-    <section>
-      <div class="section-head"><div><h2>أحدث القضايا</h2><p class="muted">اختار قضية وابدأ في قراءة الملف، جمع الأدلة، واختبار استنتاجك.</p></div><a class="btn btn-primary" href="cases.html">كل القضايا</a></div>
-      <div class="case-grid" id="caseCards"></div>
-    </section>
-  </main>
-  <footer class="footer">© Family Detective Files - مشروع لعبة تحقيق عائلية</footer>
-  <script src="data/cases.js"></script><script src="js/app.js"></script>
-</body>
-</html>
+  <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button>
+</header>
+<main>
+<section class="hero pro-card">
+  <div class="hero-content"><span class="pill">نسخة احترافية 10/10 • Semi-Dark</span><h1>منصة ألعاب عائلية تبدأ بالتحقيق… وتكمل بالألغاز.</h1><p>موقع عربي كامل جاهز للرفع على GitHub Pages: قضايا عميقة، صور داخلية، هنتات تدريجية، حفظ تقدم، وألعاب عائلية تفاعلية لكل الأعمار.</p><div class="hero-actions"><a class="btn primary" href="cases.html">استعرض القضايا</a><a class="btn ghost" href="games.html">جرّب الألعاب</a></div></div>
+  <div class="hero-panel"><div class="glass-stat"><b id="solvedCount">0</b><span>قضايا محلولة</span></div><div class="glass-stat"><b>8</b><span>قضايا كاملة</span></div><div class="glass-stat"><b>5</b><span>ألعاب عائلية</span></div><div class="glass-stat"><b>0</b><span>مكتبات خارجية</span></div></div>
+</section>
+<section class="section-head"><div><h2>قضايا مختارة</h2><p>ابدأ بقضية سهلة ثم انتقل للمستويات المتقدمة.</p></div><a class="text-link" href="cases.html">كل القضايا ←</a></section><section class="card-grid" id="featuredCases"></section>
+<section class="section-head"><div><h2>ألعاب عائلية إضافية</h2><p>مش كل المتعة تحقيق؛ أضفنا ألعاب ذاكرة ومنطق وترتيب أحداث.</p></div><a class="text-link" href="games.html">افتح الألعاب ←</a></section><section class="game-strip" id="homeGames"></section>
+<section class="quality pro-card"><h2>تحسينات النسخة الاحترافية</h2><div class="feature-grid"><div><b>حفظ تقدم</b><p>يتذكر القضايا المحلولة، الأدلة، والهنتات عبر LocalStorage.</p></div><div><b>منع الحل السريع</b><p>لا يمكن إرسال التقرير قبل جمع الحد الأدنى من الأدلة.</p></div><div><b>صور داخلية</b><p>كل قضية لها غلاف SVG داخلي بدون روابط خارجية.</p></div><div><b>جاهز GitHub</b><p>ملفات منظمة وصفحة 404 وREADME وLICENSE.</p></div></div></section>
+</main><footer class="site-footer">
+  <div><strong>Family Mystery Hub</strong><p>ألغاز وتحقيقات عائلية مناسبة لكل الأعمار.</p></div>
+  <div class="footer-links"><a href="cases.html">ابدأ قضية</a><a href="games.html">الألعاب</a><a href="guide.html">طريقة الرفع</a></div>
+</footer></div><script src="data/cases.js"></script><script src="data/games.js"></script><script src="js/app.js"></script></body></html>

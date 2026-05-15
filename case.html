@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#172033" />
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" /><title>تفاصيل القضية | Family Mystery Hub</title></head><body data-page="cases"><div class="bg-orbs"></div><div class="container"><header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark">⌕</span><span><strong>Family Mystery Hub</strong><small>منصة ألعاب عائلية</small></span></a>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="index.html" data-page="home">الرئيسية</a>
+    <a href="cases.html" data-page="cases">القضايا</a>
+    <a href="games.html" data-page="games">الألعاب</a>
+    <a href="guide.html" data-page="guide">الدليل</a>
+  </nav>
+  <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button>
+</header>
+<main class="case-layout"><aside class="case-sidebar pro-card"><a class="back-link" href="cases.html">← كل القضايا</a><img id="caseCover" class="case-cover" alt="غلاف القضية" /><h2 id="caseName">القضية</h2><p id="caseMeta" class="muted"></p><div class="progress-line"><span id="progressBar"></span></div><p id="progressText" class="small-note"></p><div class="side-actions"><button class="btn primary full" id="hintBtn">هنت تدريجي</button><button class="btn ghost full" id="resetCaseBtn">إعادة القضية</button></div></aside>
+<section class="case-main pro-card"><div class="case-top"><div><span class="pill" id="caseLevel">المستوى</span><h1 id="caseTitle">...</h1><p id="caseSummary" class="muted"></p></div></div><div class="tabs" id="caseTabs"></div><article id="caseContent" class="case-content"></article></section>
+<aside class="evidence-panel pro-card"><h3>لوحة الأدلة</h3><p class="muted">اجمع الأدلة المهمة قبل إرسال التقرير.</p><div id="evidenceBoard" class="evidence-board"></div><div class="report-box"><h3>تقرير المحقق</h3><select id="answerSelect"></select><textarea id="noteBox" placeholder="اكتب سبب اختيارك والدليل الأقوى..."></textarea><button class="btn primary full" id="solveBtn">إرسال التقرير</button><div id="caseResult" class="result-box"></div></div></aside></main><footer class="site-footer">
+  <div><strong>Family Mystery Hub</strong><p>ألغاز وتحقيقات عائلية مناسبة لكل الأعمار.</p></div>
+  <div class="footer-links"><a href="cases.html">ابدأ قضية</a><a href="games.html">الألعاب</a><a href="guide.html">طريقة الرفع</a></div>
+</footer></div><div class="modal" id="hintModal"><div class="modal-card"><h3>هنت تدريجي</h3><p id="hintText"></p><div class="modal-actions"><button class="btn primary" id="nextHintBtn">هنت أقوى</button><button class="btn ghost" id="closeHintBtn">إغلاق</button></div></div></div><script src="data/cases.js"></script><script src="js/app.js"></script><script src="js/case.js"></script></body></html>

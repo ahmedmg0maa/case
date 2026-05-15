@@ -1,49 +1,48 @@
-# ملفات التحري العائلية - Family Detective Files
+# Family Mystery Hub Professional
 
-موقع لعبة تحقيق عربية عائلية مناسب لعمر 14+، يحتوي على أربع قضايا مستقلة بدرجات صعوبة مختلفة.
+موقع ألعاب عائلية عربي احترافي جاهز للرفع على GitHub Pages.
 
-## المميزات
+## المحتوى
 
-- تصميم احترافي Responsive.
-- صفحات منفصلة: الرئيسية، القضايا، غرفة التحقيق، طريقة اللعب.
-- CSS و JavaScript منفصلين.
-- بيانات القضايا في ملف مستقل `data/cases.js`.
-- 4 قضايا كاملة:
-  1. سرقة الدراجة الذهبية - سهلة
-  2. اختفاء اللوحة الزرقاء - متوسطة
-  3. لغز المكتبة القديمة - صعبة
-  4. سر الختم الفضي - متوسطة بتفاصيل أكثر
-- نظام أدلة محفوظ في Local Storage.
-- هنتات تدريجية لكل قضية.
-- نظام حل وتقرير نهائي.
-- بدون مكتبات خارجية.
+- 8 قضايا تحقيق عائلية بمستويات مختلفة.
+- 5 ألعاب عائلية إضافية: الذاكرة، ترتيب الأحداث، كسر الرمز، كلمة السر، وتحدي المنطق.
+- تصميم Semi-Dark مريح للعين.
+- صور SVG داخلية لكل قضية.
+- حفظ تقدم اللاعب في LocalStorage.
+- صفحة 404 وFavicon.
 
-## التشغيل محليًا
+## طريقة التشغيل محليًا
 
 افتح ملف `index.html` مباشرة في المتصفح.
 
-## الرفع على GitHub Pages
+## طريقة الرفع على GitHub Pages
 
 1. أنشئ Repository جديد على GitHub.
-2. ارفع كل ملفات المشروع كما هي.
-3. ادخل Settings > Pages.
-4. اختار Branch: `main` و Folder: `/root`.
-5. اضغط Save.
-6. سيظهر رابط الموقع بعد دقائق.
+2. ارفع محتويات هذا المجلد نفسها، وليس ملف ZIP.
+3. تأكد أن `index.html` موجود في Root.
+4. افتح Settings ثم Pages.
+5. اختر Branch: `main` و Folder: `/root`.
+6. اضغط Save وانتظر دقيقة.
 
-## هيكل الملفات
+## الملفات
 
-```text
-family-detective-files/
-├── index.html
-├── cases.html
-├── play.html
-├── guide.html
-├── css/
-│   └── style.css
-├── js/
-│   └── app.js
-├── data/
-│   └── cases.js
-└── README.md
+```txt
+index.html
+cases.html
+case.html
+games.html
+guide.html
+404.html
+css/style.css
+js/app.js
+js/case.js
+js/games.js
+data/cases.js
+data/games.js
+assets/images/*.svg
+assets/icons/favicon.svg
 ```
+
+## الترخيص
+
+MIT License.
