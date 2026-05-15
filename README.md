@@ -1,48 +1,40 @@
-# Family Mystery Hub Professional
+# Family Mystery Hub - Fixed GitHub Pages Version
 
-موقع ألعاب عائلية عربي احترافي جاهز للرفع على GitHub Pages.
+موقع ألعاب عائلية وتحقيقات عربي جاهز للرفع على GitHub Pages.
 
-## المحتوى
+## طريقة الرفع الصحيحة
 
-- 8 قضايا تحقيق عائلية بمستويات مختلفة.
-- 5 ألعاب عائلية إضافية: الذاكرة، ترتيب الأحداث، كسر الرمز، كلمة السر، وتحدي المنطق.
-- تصميم Semi-Dark مريح للعين.
-- صور SVG داخلية لكل قضية.
-- حفظ تقدم اللاعب في LocalStorage.
-- صفحة 404 وFavicon.
+1. فك ضغط الملف.
+2. افتح المجلد الناتج.
+3. ارفع محتويات المجلد نفسها، وليس المجلد بالكامل.
+4. تأكد أن `index.html` ظاهر في الصفحة الرئيسية للـ Repository.
+5. من Settings > Pages اختر:
+   - Branch: `main`
+   - Folder: `/root`
+6. افتح الرابط بعد دقيقة.
 
-## طريقة التشغيل محليًا
+## مهم
 
-افتح ملف `index.html` مباشرة في المتصفح.
-
-## طريقة الرفع على GitHub Pages
-
-1. أنشئ Repository جديد على GitHub.
-2. ارفع محتويات هذا المجلد نفسها، وليس ملف ZIP.
-3. تأكد أن `index.html` موجود في Root.
-4. افتح Settings ثم Pages.
-5. اختر Branch: `main` و Folder: `/root`.
-6. اضغط Save وانتظر دقيقة.
-
-## الملفات
+لا ترفع ملف ZIP كما هو. لا تضع الملفات داخل فولدر إضافي. الشكل الصحيح:
 
 ```txt
-index.html
-cases.html
-case.html
-games.html
-guide.html
-404.html
-css/style.css
-js/app.js
-js/case.js
-js/games.js
-data/cases.js
-data/games.js
-assets/images/*.svg
-assets/icons/favicon.svg
+case/
+├── index.html
+├── cases.html
+├── case.html
+├── games.html
+├── guide.html
+├── 404.html
+├── css/
+├── js/
+└── assets/
 ```
 
-## الترخيص
+## المميزات
 
-MIT License.
+- 8 قضايا تحقيق.
+- 5 ألعاب عائلية.
+- تصميم Semi-Dark.
+- لا توجد مكتبات خارجية.
+- مسارات Relative متوافقة مع GitHub Pages project sites.
+- حفظ تقدم في LocalStorage.

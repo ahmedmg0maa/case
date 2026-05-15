@@ -1,17 +1,18 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#172033" />
-  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="css/style.css" /><title>الدليل والرفع | Family Mystery Hub</title></head><body data-page="guide"><div class="bg-orbs"></div><div class="container"><header class="site-header">
-  <a class="brand" href="index.html"><span class="brand-mark">⌕</span><span><strong>Family Mystery Hub</strong><small>منصة ألعاب عائلية</small></span></a>
-  <nav class="main-nav" aria-label="Main navigation">
-    <a href="index.html" data-page="home">الرئيسية</a>
-    <a href="cases.html" data-page="cases">القضايا</a>
-    <a href="games.html" data-page="games">الألعاب</a>
-    <a href="guide.html" data-page="guide">الدليل</a>
-  </nav>
-  <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button>
-</header><main><section class="page-title pro-card"><span class="pill">دليل الاستخدام</span><h1>طريقة اللعب والرفع على GitHub</h1><p>كل ما تحتاجه لتشغيل الموقع محليًا أو رفعه على GitHub Pages.</p></section><section class="guide-grid"><div class="guide-card pro-card"><h2>طريقة اللعب</h2><ol><li>افتح صفحة القضايا واختر قضية مناسبة للمستوى.</li><li>اقرأ التبويبات: الملف، الشهادات، الأدلة، والدافع.</li><li>أضف الأدلة المهمة للوحة الأدلة.</li><li>استخدم الهنتات إذا احتجت، ثم أرسل التقرير.</li></ol></div><div class="guide-card pro-card"><h2>طريقة الرفع</h2><ol><li>فك ضغط الملف ZIP.</li><li>افتح GitHub وأنشئ Repository جديد.</li><li>ارفع محتويات المجلد نفسها، وليس المجلد المضغوط.</li><li>تأكد أن index.html في Root.</li><li>من Settings ثم Pages اختر Branch: main و Folder: /root.</li></ol></div><div class="guide-card pro-card"><h2>ملاحظات تقنية</h2><ul><li>لا توجد مكتبات خارجية.</li><li>كل الصور SVG داخلية.</li><li>التقدم محفوظ في LocalStorage.</li><li>الموقع Responsive ويعمل على الموبايل.</li></ul></div></section></main><footer class="site-footer">
-  <div><strong>Family Mystery Hub</strong><p>ألغاز وتحقيقات عائلية مناسبة لكل الأعمار.</p></div>
-  <div class="footer-links"><a href="cases.html">ابدأ قضية</a><a href="games.html">الألعاب</a><a href="guide.html">طريقة الرفع</a></div>
-</footer></div><script src="js/app.js"></script></body></html>
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Family Mystery Hub - منصة ألعاب عائلية وتحقيقات عربية.">
+  <style>body{font-family:"Segoe UI",Tahoma,Arial,sans-serif;background:#101827;color:#f7fbff}main{display:block}.container{width:min(1180px,calc(100% - 32px));margin:auto}</style>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css"><title>الدليل | Family Mystery Hub</title></head><body data-page="guide">
+<nav class="navbar">
+  <a class="brand" href="index.html"><img src="assets/favicon.svg" alt="logo"><span><b>Family Mystery Hub</b><span>منصة ألعاب عائلية</span></span></a>
+  <button class="mobile-toggle" id="mobileToggle">القائمة</button>
+  <div class="navlinks" id="navlinks">
+    <a data-nav="home" href="index.html">الرئيسية</a>
+    <a data-nav="cases" href="cases.html">القضايا</a>
+    <a data-nav="games" href="games.html">الألعاب</a>
+    <a data-nav="guide" href="guide.html">الدليل</a>
+  </div>
+</nav><main class="container"><section class="page-title"><h1>دليل الاستخدام والرفع</h1><p class="lead">هذه النسخة معمولة خصيصًا حتى تعمل على GitHub Pages بدون مشاكل CSS أو JavaScript.</p></section><section class="grid" style="grid-template-columns:repeat(3,minmax(0,1fr))"><div class="info-card case-content"><h3>طريقة اللعب</h3><p>افتح القضية، اقرأ التبويبات، أضف الأدلة، ثم اختر الحل. لن يسمح الموقع بإرسال التقرير قبل جمع الحد الأدنى من الأدلة.</p></div><div class="info-card case-content"><h3>حفظ التقدم</h3><p>التقدم يحفظ تلقائيًا في LocalStorage: القضايا المحلولة، الأدلة، والهنتات المستخدمة.</p></div><div class="info-card case-content"><h3>رفع GitHub</h3><p>ارفع محتويات المجلد مباشرة بحيث يكون index.html في Root للـ Repository وليس داخل فولدر إضافي.</p></div></section><section class="game-area"><h2>تقدمك الحالي</h2><div class="progress-row" id="progressSummary"></div><button class="btn btn-soft" id="clearProgress" style="margin-top:16px">مسح التقدم</button></section><section class="game-area"><h2>اختبار الملفات</h2><p class="lead">لو الصفحة ظهرت بتصميم كامل، إذن CSS وJS يعملان. لو ظهرت كنص فقط، تأكد أنك رفعت مجلد css ومجلد js بجانب index.html.</p><p class="lead">الشكل الصحيح داخل GitHub:</p><div class="quote">index.html<br>cases.html<br>case.html<br>games.html<br>guide.html<br>css/style.css<br>js/data.js<br>js/app.js<br>assets/...</div></section></main><footer class="footer container">جاهز للرفع والاستخدام.</footer><div class="toast" id="toast"></div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script></body></html>
